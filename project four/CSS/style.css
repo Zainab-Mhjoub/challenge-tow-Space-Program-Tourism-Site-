@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;900&family=Bellefair&display=swap");
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  *, *::before *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+  }
+/*start variables*/
+:root{
+    --main-color:#04b8eb;
+    --second-color:#1f9bdf;
+    --third-color:rgb(7 54 78/47%);
+    --fourth-color:rgb(48 79 96/50%);
+    --section-padding:100px;
+}
+/*end variables */
+/*satrt global rules */
+*{
+   -webkit-box-sizing: border-box ;
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+ul {
+    list-style: none;
+} 
+a {
+    text-decoration: none;
+    color: white;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+/*Small Screen*/
+   @media (min-width : 768px){
+    .container{
+        width: 750px;
+    }
+   }
+   /*Medium Screen */
+   @media (min-width : 992px){
+    .container{
+        width: 970px;
+    }
+   }
+/*larg Screen */
+   @media (min-width : 12000px){
+    .container{
+        width: 1170px;
+    }
+   }
+/*end global rules */
+header{
+    position: relative;
+}
+header .Logo{
+    transform: translateY(57px);
+    margin-left: -257px;
+    transition:transform 0.1s ease-in-out;
+}
+header .Logo:hover{
+    transform:scale(1.05);
+}
+header .menu-open-btn{
+    display: none;
+}
+header nav{
+    flex: 1;
+   display: flex;
+   justify-content: flex-end;
+    width: 81%;
+    background: linear-gradient(to right, #0f1220, rgba(252, 252, 252, 0.144), rgba(252, 252, 252, 0.144));;
+    margin-left: 238px;
+    height: 58px;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav ul li{
+    padding-left: 15px;
+}
+header nav ul li a{
+    margin-right: 43px;
+}
+header nav ul li a.active,
+header nav ul li a:hover{
+    color : rgb(13, 13, 14);
+    border-bottom :1px solid rgba(7, 67, 75, 0.712);
+    text-shadow:2px 2px 8px #ffffe7;
+}
+header nav:before{
+    border-bottom: 1px solid white;
+}
+/* end home  */
+/* start landing-page */
+.landing-page{
+background-image: url(/Images/home/background-home-desktop.jpg);
+}
+.landing-page .container{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.landing-page .container .landing-box-text{
+
+}
+.landing-page .container .landing-box-button{
+
+}
+/* start home for mobile  */
+@media(max-width: 768px){
+    .landing-page{
+        background-image: url(/Images/home/background-home-mobile.jpg);
+    }
+}
+/* end home for mobile  */
+         /******* start home for tablet    ***** */
+ @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+body {
+    background-image: url(/Images/home/background-home-tablet.jpg);
+}
+
+  }
