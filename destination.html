@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge tow| Space tourism </title>
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <!--render All elments normaly-->
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <!--font awseme library-->
+    <link rel = "stylesheet" href="CSS/all.min.css"/>
+    <!--google fonts work sans-->
+</head>
+<body class="destination">
+    <header>
+        <div class="container">
+            <img class ="Logo"src="Images/shared/logo.svg" alt="space-logo"/>
+            <img class="menu-open-btn"src="Images/shared/icon-hamburger.svg" alt="open">
+            <div class="header-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#HOME" onclick="Redirect(url='http://127.0.0.1:5500/index.html')"><b>00</b> HOME</a></li>
+                        <li><a href="#DESTINATION" onclick="Redirect(url='http://127.0.0.1:5500/destination.html')"><b>01</b> DESTINATION</a></li>
+                        <li><a href="#CREW"  onclick="Redirect(url='http://127.0.0.1:5500/crew.html')"><b>02</b> CREW</a></li>
+                        <li><a href="#TECHNOLOGY"  onclick="Redirect(url='http://127.0.0.1:5500/technology.html')"><b>03</b> TECHNOLOGY</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- start landing page  -->
+    <div class="destination-page">
+<div class="container">
+    <div class="d-element">
+        <div class="box-one">
+        <p class="f-p"><span class="n">01</span>  Pick your destination</p>
+            <img src="Images/destination/image-europa.png" class="responsive" id="d-img">
+</div>
+<div class="box-tow">
+    <ul class="destination-photo-ul">
+        <li><a href="#moon" id="d-moon"> Moon</a></li>
+        <li><a href="#mars" id="d-mars"> Mars</a></li>
+        <li><a href="#europa" id="d-europa"> Europa</a></li>
+        <li><a href="#titan" id="d-titan"> Titan</a></li>
+    </ul>
+    <h1 id="d-name">EUROPA</h1>
+    <p class="s-p" id="tall-text">
+    The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+  winter lover's dream. With an icy surface, it's perfect for a bit of 
+  ice skating, curling, hockey, or simple relaxation in your snug 
+  wintery cabin.
+</p>
+<div class="mini-box">
+    <div class="mini-one">
+        <p class="m-b-one">AVG. DESTANCE</p>
+        <p class="m-b-tow" id="distance">225 MIL. KM</p>
+    </div>
+    <div class="mini-tow">
+        <p class="m-b-one">EST. TRAVEL TIME</p>
+        <p class="m-b-tow" id="space">9 MONTHES</p>
+    </div>
+</div>
+</div>
+    </div>  
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

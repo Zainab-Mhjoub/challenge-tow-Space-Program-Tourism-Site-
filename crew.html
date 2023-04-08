@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge tow| Space tourism </title>
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <!--render All elments normaly-->
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <!--font awseme library-->
+    <link rel = "stylesheet" href="CSS/all.min.css"/>
+    <!--google fonts work sans-->
+</head>
+<body class="crew">
+    <header>
+        <div class="container">
+            <img class ="Logo"src="Images/shared/logo.svg" alt="space-logo"/>
+            <img class="menu-open-btn"src="Images/shared/icon-hamburger.svg" alt="open">
+            <div class="header-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#HOME" onclick="Redirect(url='http://127.0.0.1:5500/index.html')"><b>00</b> HOME</a></li>
+                        <li><a href="#DESTINATION" onclick="Redirect(url='http://127.0.0.1:5500/destination.html')"><b>01</b> DESTINATION</a></li>
+                        <li><a href="#CREW"  onclick="Redirect(url='http://127.0.0.1:5500/crew.html')"><b>02</b> CREW</a></li>
+                        <li><a href="#TECHNOLOGY"  onclick="Redirect(url='http://127.0.0.1:5500/technology.html')"><b>03</b> TECHNOLOGY</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- start landing page  -->
+    <div class="crew-page">
+<div class="container">
+    <div class="c-element">
+        <div class="box-one">
+        <p class="crew-title"><span class="n">02</span>  Meet your crew</p>
+<p class="firstTitle" id="firstTitleid"> Flight Engineer</p>
+<p class="secondTitle" id="secondTitleid"> Anousheh Ansari </p>
+<p class="crewPragraph" id="crewPragraphid">
+    Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+    Ansari was the fourth self-funded space tourist, 
+    the first self-funded woman to fly to the ISS, and the first Iranian in space. 
+</p>
+    <div class="c-radio">
+    <input type="radio" name="choose" id="img-1" onclick="changeFormula()" checked class="colorRadio"/>
+    <input type="radio" name="choose" id="img-2" onclick="changeFormula()" class="colorRadio"/>
+    <input type="radio" name="choose" id="img-3" onclick="changeFormula()" class="colorRadio"/>
+    <input type="radio" name="choose" id="img-4" onclick="changeFormula()" class="colorRadio"/>
+    </div>
+    </div>
+    <div class="box-tow">
+    <img src="/Images/crew/image-anousheh-ansari.png" id="crewImg" alt=""/>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
